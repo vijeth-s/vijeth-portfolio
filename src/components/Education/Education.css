@@ -1,0 +1,81 @@
+/* src/components/Education/Education.css */
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.edu-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.edu-card:hover {
+  border-color: rgba(108, 99, 255, 0.4);
+  transform: translateX(4px);
+}
+
+.edu-year {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--accent);
+  min-width: 52px;
+  text-align: center;
+  background: rgba(108, 99, 255, 0.08);
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+
+.edu-info {
+  flex: 1;
+}
+
+.edu-degree {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.edu-school {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.edu-uni {
+  font-size: 0.74rem;
+  color: rgba(108, 99, 255, 0.7);
+  margin-top: 2px;
+}
+
+.edu-score {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #4ade80;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .edu-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  
+  .edu-year {
+    align-self: flex-start;
+  }
+  
+  .edu-score {
+    align-self: flex-start;
+  }
+}
