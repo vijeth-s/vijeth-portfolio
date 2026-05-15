@@ -38,6 +38,14 @@ const Projects = () => {
       codeLink: "https://github.com/vijeth-s/css-playground"
     },
     {
+      subtitle: "Interactive SQL Learning Platform",
+      name: "SQL Mastery Platform",
+      description: "Browser-based SQL learning platform with an interactive SQL playground, built-in sample databases, runnable queries, and beginner-to-advanced lessons in a responsive developer-focused interface.",
+      tech: ["React", "Vite", "Tailwind CSS", "SQL.js", "SQLite", "Framer Motion"],
+      demoLink: "https://vijeth-s.github.io/Sql-Mastery-Platform/",
+      codeLink: "https://github.com/vijeth-s/Sql-Mastery-Platform"
+    },
+    {
       subtitle: "Search Movies by Title",
       name: "Movie Search App",
       description: "Search movies by title and display detailed information using a live movie API, presented in a responsive and user-friendly layout.",
