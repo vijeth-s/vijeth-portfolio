@@ -1,70 +1,156 @@
-# Getting Started with Create React App
+# Vijeth Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Live Demo**: https://vijeth-s.github.io/vijeth-portfolio/
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+# 📥 How to Use This Project
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js (v14 or higher) - Download Node.js
+- Git (optional, for cloning) - Download Git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Step 1: Download the Project
 
-### `npm run build`
+### Option A: Clone with Git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/vijeth-s/vijeth-portfolio.git
+cd vijeth-portfolio
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Option B: Download ZIP
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Go to GitHub Repository
+2. Click **"Code" → "Download ZIP"**
+3. Extract the ZIP file
+4. Open terminal in the extracted folder
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Step 2: Install Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This installs all required packages (React, dependencies, etc.)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Step 3: Run Locally
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Open `http://localhost:3000` in your browser
+- The page auto-reloads when you make changes
+- Press `Ctrl + C` to stop the server
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Step 4: Build for Production
 
-### Analyzing the Bundle Size
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Creates an optimized `build` folder ready for deployment.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# 🛠️ Customization Guide
 
-### Advanced Configuration
+## Change Personal Information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+| File Location | What to Edit |
+|---------------|---------------|
+| `src/components/Hero/Hero.jsx` | Name, title, description |
+| `src/components/About/About.jsx` | Bio and background |
+| `src/components/Education/Education.jsx` | Education details |
+| `src/components/Skills/Skills.jsx` | Technical skills |
+| `src/components/Experience/Experience.jsx` | Work experience |
+| `src/components/Projects/Projects.jsx` | Projects (add/remove) |
+| `src/components/Certifications/Certifications.jsx` | Certifications |
+| `src/components/Contact/Contact.jsx` | Email and social links |
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Replace Images
 
-### `npm run build` fails to minify
+| File | Location | What to do |
+|------|----------|-------------|
+| Profile photo | `src/assets/Vijeth_Photograph.JPG` | Replace with your photo |
+| Resume PDF | `public/Vijeth_Resume.pdf` | Replace with your resume |
+| Favicon | `public/icon.svg` | Replace with your icon |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Change Theme Colors
+
+Edit `src/styles/global.css`:
+
+```css
+:root {
+  --bg: #0a0a0f;        /* Background */
+  --accent: #6c63ff;    /* Primary color */
+  --accent2: #ff6584;   /* Secondary color */
+  --text: #f0eeff;      /* Text color */
+}
+```
+
+---
+
+# 🌐 How to Deploy
+
+## Deploy to GitHub Pages
+
+### 1. Update `package.json`
+
+```json
+{
+  "homepage": "https://YOUR_USERNAME.github.io/YOUR_REPO_NAME",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
+```
+
+---
+
+### 2. Install gh-pages
+
+```bash
+npm install --save-dev gh-pages
+```
+
+---
+
+### 3. Deploy
+
+```bash
+npm run deploy
+```
+
+---
+
+### 4. Enable GitHub Pages
+
+- Go to repository **Settings** → **Pages**
+- Under **"Branch"**, select `gh-pages`
+- Click **Save**
+
+---
+
+### 5. Your site is live at
+
+```text
+https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/
+```
