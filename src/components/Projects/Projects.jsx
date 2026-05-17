@@ -34,7 +34,7 @@ const Projects = () => {
       name: "CSS Playground",
       description: "Interactive CSS learning platform with real-time preview, styling modules, and dynamic code generation with a clean, responsive interface.",
       tech: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
-      demoLink: "https://css-playground-v2.netlify.app/",
+      demoLink: "https://vijeth-s.github.io/CSS-PlayGround/",
       codeLink: "https://github.com/vijeth-s/css-playground"
     },
     {
