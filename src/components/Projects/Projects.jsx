@@ -35,7 +35,7 @@ const Projects = () => {
       description: "Interactive CSS learning platform with real-time preview, styling modules, and dynamic code generation with a clean, responsive interface.",
       tech: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
       demoLink: "https://vijeth-s.github.io/CSS-PlayGround/",
-      codeLink: "https://github.com/vijeth-s/css-playground"
+      codeLink: "https://github.com/vijeth-s/css-playground" 
     },
     {
       subtitle: "Interactive SQL Learning Platform",
